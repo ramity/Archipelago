@@ -1,0 +1,11 @@
+services:
+  archipelago:
+    container_name: archipelago
+    build:
+      context: ./docker/archipelago
+      dockerfile: Dockerfile
+    image: archipelago
+    volumes:
+      - ./players:/Archipelago/Players
+    ports:
+      - 38281:38281
