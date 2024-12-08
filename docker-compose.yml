@@ -7,5 +7,6 @@ services:
     image: archipelago
     volumes:
       - ./players:/Archipelago/Players
+      - ./output:/Archipelago/output
     ports:
       - 38281:38281

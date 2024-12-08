@@ -1,13 +1,1 @@
 FROM public.ecr.aws/cody-bolling/archipelago:latest
-
-# RUN pip install -r requirements.txt
-RUN pip install maseya-z3pr
-RUN pip install xxtea
-RUN pip install Pymem
-RUN pip install factorio-rcon-py
-RUN pip install pyevermizer
-RUN pip install s2clientprotocol
-RUN pip install nest-asyncio
-RUN python3 Generate.py
-
-ENTRYPOINT sleep infinity
